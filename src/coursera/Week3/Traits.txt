@@ -1,0 +1,5 @@
+La seule différence entre un trait et une classe :
+    ==> un trait ne prend pas de paramètres
+    ==> une classe peut prendre des paramètres
+
+Une sub-classe ne peut avoir qu'une super-classe parente, il faudra utiliser des traits pour lui attribuer d'autres éléments

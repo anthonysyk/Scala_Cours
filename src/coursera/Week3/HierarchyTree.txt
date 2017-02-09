@@ -1,0 +1,13 @@
+Il existe des classes par défaut
+
+Any, Any.val (values) , Any.ref (collections) comme parents de toutes les classes
+
+Toutes les sub-classes ont une sub-class scala.Nothing pour Any.val et scala.Null pour Any.ref
+
+Utilité ?
+
+1) Signaler un type de retour anormal
+2) Element d'une collection vide (List.empty vaut List(Nothing))
+
+Rq : throw new Exception("") retourne Nothing (coupe l'évaluation et retourne le message "")
+
