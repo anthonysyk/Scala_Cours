@@ -1,3 +1,5 @@
+import coursera.Week3.List
+
 /**
   * Class hierarchies
   *
@@ -59,3 +61,4 @@ class Sub extends Base {
   override def foo = 1
   def bar = 3
 }
+
