@@ -1,0 +1,28 @@
+Une fonction générique peut avoir la notation suivante :
+
+def assertAllPos[S <: IntSet](r: S) : S
+
+On a deux types de notations :
+
+S <: T signifie que S est un subtype de T
+
+ou
+
+S >: T signifie que S est un supertype de T
+
+Ici la fonction assertAllPos ne prend en paramètre que des élements d'un type qui étend IntSet
+
+Remarque :
+
+- On dit que <: IntSet est un upper bound du type S
+
+def assertAllPos[S <: IntSet](r: S) : S
+
+- On dit que >: NonEmpty est un lower bound du type S
+
+def assertAllPos[S >: NonEmpty](r: S) : S
+
+- On peut mixer les deux bounds : on aura donc S qui peut être de n'importe quel type entre NonEmpty et IntSet
+
+[S >: NonEmpty <: IntSet]
+

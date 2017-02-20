@@ -1,0 +1,6 @@
+Covariance : relation entre deux type parameters wrapped dans un autre type
+
+List[NonEmpty] <: List[IntSet]
+
+List est un type covariant, c'est à dire que la relation de covariance entre NonEmpty et IntSet est conservée
+

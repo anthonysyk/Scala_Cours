@@ -1,0 +1,35 @@
+Deux différences entre les lists et les arrays :
+
+- Une liste est immutable contrairement à l'array qui est mutable
+
+- Une liste est récursive alors qu'un array est plat
+
+
+
+Sucre syntaxique : " :: " se prononce cons (comme la class List de la semaine 3)
+
+List("apple", "oranges", "pears")
+
+- vaut "apples" :: ( "oranges" :: ( "pears" :: Nil ) )
+
+- vaut Nil.::("pears").::("oranges").::("apples")
+
+- mais s'écrit "apples" :: "oranges" :: "pears"
+
+- Les operands se terminant par ":" s'associent avec l'élément de droite
+
+
+
+Principales méthodes :
+
+val fruits = Cons("apples", Cons("oranges", Cons("pears", Nil)))
+
+- head : retourne le cons du premier élément cad "apples"
+
+- tail : retourne le second élément cad Cons("oranges", Cons("pears", Nil))
+
+- isEmpty : retourne true si vide false si remplie
+
+exemple à retenir:
+
+fruits.tail.head == "oranges"

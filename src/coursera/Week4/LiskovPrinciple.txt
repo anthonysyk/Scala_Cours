@@ -1,0 +1,14 @@
+The Liskov Substitution Principle
+
+Barbara Liskov dit :
+
+S <: T
+Un type S peut être un subtype de T lorsque tout ce qui est appliqué à une valeur de T est appliqué à une valeur de S
+
+Real version :
+
+val x: T
+val y: S
+
+Si je peux faire q(x) alors que je peux aussi faire q(y) lorsque S <: T
+
