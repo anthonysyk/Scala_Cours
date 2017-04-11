@@ -16,25 +16,25 @@ import scala.concurrent.Future
 object ForComprehension {
 
 
-  def kjExemple = {
-
-    val token: Future[Option[String]] = Future.successful(Some("randomToken"))
-
-    token.flatMap {
-      case Some(token) => {
-        val futureAccount: Future[Option[String]] = Future.successful(Some("account"))
-
-        for {
-          maybeAccount <- futureAccount
-          result <- maybeAccount match {
-            case Some(_) => Future.successful(true)
-            case None => Future.successful(false)
-          }
-        } yield result
-      }
-      case None => Future.successful(false)
-    }
-  }
+//  def kjExemple = {
+//
+//    val token: Future[Option[String]] = Future.successful(Some("randomToken"))
+//
+//    token.flatMap {
+//      case Some(token) => {
+//        val futureAccount: Future[Option[String]] = Future.successful(Some("account"))
+//
+//        for {
+//          maybeAccount <- futureAccount
+//          result <- maybeAccount match {
+//            case Some(_) => Future.successful(true)
+//            case None => Future.successful(false)
+//          }
+//        } yield result
+//      }
+//      case None => Future.successful(false)
+//    }
+//  }
 
 }
 
