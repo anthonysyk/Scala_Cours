@@ -1,4 +1,4 @@
-package coursera.Week3
+package coursera_funprog01.Week3
 
 /**
   * Created by Anthony on 09/02/2017.

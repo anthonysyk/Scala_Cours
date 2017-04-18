@@ -1,4 +1,4 @@
-package coursera.Week1
+package coursera_funprog01.Week1
 
 /**
   * Règles d'évaluations

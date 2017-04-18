@@ -1,4 +1,4 @@
-import coursera.Week3.List
+import coursera_funprog01.Week3.List
 
 /**
   * Class hierarchies
